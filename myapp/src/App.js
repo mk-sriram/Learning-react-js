@@ -1,4 +1,6 @@
+import {useState } from 'react'; 
 import './App.css';
+
 
 
 function wMyButton() {
@@ -46,8 +48,15 @@ function MyButton() {
 
 //states in reat are used to manage the current situatuion of a component 
 
+//when called with function and states with 'use" ist caleld a hook 
+
+
+
 
 function App() {
+  const [counter, setCounter] = useState(); //here the counter is variable, and setCounter is function that changes the variable
+
+  //whyen dependency is empty, then the code only updates when the code is updated once 
   return (
     <div>
       <h1>Welcome to my app</h1>
